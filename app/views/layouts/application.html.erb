@@ -11,6 +11,43 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class ="header">
+      <a href="/">Stay Share</a>
+      <div class = "search1"><%= yield %></div>
+      <div class = "btn" >
+        <button type = "submit" class = "btn0"><%= link_to "ログイン", new_user_session_path %></button>
+        <button type = "submit" class = "btn1"><%= link_to "登録する", new_user_registration_path %></button>
+      </div>
+    </div>
+    
+    <div class ="main">
+      <div class = "search2">
+        <img src="https://www.photock.jp/photo/middle/photo0000-2778.jpg">
+        <p>そうだ！旅に出よう<br><input type = "search" placeholder="東京"><button>探す</button></p>
+      </div>
+      <h3>おすすめのエリア</h3>
+      <div class = "content">
+        <div class="contents-item1">
+          <a href =""><img src="https://www.photock.jp/photo/middle/photo0000-3718.jpg"></a>
+          <p>東京</p>
+        </div>
+        <div class="contents-item2">
+          <a href =""><img src="https://www.photock.jp/photo/middle/photo0000-1782.jpg"></a>
+          <p>大阪</p>
+        </div>
+        <div class="contents-item3">
+          <a href =""><img src="https://www.photock.jp/photo/middle/photo0000-2704.jpg"></a>
+          <p>福岡</p>
+        </div>
+        <div class="contents-item4">
+          <a href =""><img src="https://www.photock.jp/photo/middle/photo0000-3338.jpg"></a>
+          <p>札幌</p>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <h3>Welcome to my app</h3>
+    </footer>
   </body>
 </html>
